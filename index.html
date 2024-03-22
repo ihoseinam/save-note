@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <!-- css -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body class=" bg-info container py-3">
+    <div class="bg-dark shadow rounded p-4  mx-auto " style="width: 800px;">
+        <div class="d-flex m-2">
+
+            <input type="text" class="inp-job form-control m-0 w-75 " placeholder="Enter your task!" onkeypress="clicks(event)">
+            <button style="--clr:#39FF14" class=" btn-saver btn_style " onclick="clicks(event)"><span>Save</span><i></i></button>
+
+        </div>
+        <div>
+            <p class="  text-center py-3  text-light"  > To Do list </p>
+        </div>
+        <div class="overflow-y-scroll " style="height: 70vh; padding-right: 40px;">
+            <ul class="list">   
+            </ul>
+        </div>
+    </div>
+    <script src="jquery-3.7.0.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
